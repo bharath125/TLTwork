@@ -1,0 +1,18 @@
+today we will learn some tricks in html in vs code or any other platform.
+
+create a html file 
+
+if dont remember the html doc we can use some tricks to save our time
+! + Tab   this we got now 
+
+if we want to make html5 doc below is the trick
+html:5 +Tab
+
+if we want create a div and class to it
+div.myclass
+
+if you want to more classes to the div how we can do it?
+div.myclass1.myclass2.myclass3
+
+
+thank you see you in the next video
