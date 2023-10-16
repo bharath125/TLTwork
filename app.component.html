@@ -1,0 +1,39 @@
+<nz-input-group>
+  <input nz-input placeholder="dropdown" />
+</nz-input-group>
+<button (click)="getCountries()">Click</button>
+
+<!-- <div>
+  <ul *ngFor="let i of states">
+    <li>{{ i.name }}</li>
+  </ul>
+</div> -->
+<br />
+<nz-input-group nzCompact nzSearch>
+  <input nz-input id=" nzSearch" name=" nzSearch" placeholder="" />
+  <nz-cascader
+    [nzTriggerAction]="'click'"
+    [nzExpandTrigger]="'hover'"
+    [nzOptions]="nzOptions"
+  ></nz-cascader>
+</nz-input-group>
+
+<br />
+<a nz-dropdown [nzDropdownMenu]="menu">
+  Hover me
+  <span nz-icon nzType="down"></span>
+</a>
+<nz-dropdown-menu #menu="nzDropdownMenu">
+  <ul nz-menu nzSelectable *ngFor="let i of states">
+    <li>{{ i.name }}</li>
+  </ul>
+</nz-dropdown-menu>
+
+<ngx-doc-viewer
+  [url]="pdfSrc"
+  viewer="google"
+  style="width: 100%; height: 93vh"
+  (loaded)="contentLoaded()"
+>
+  <div>Loading</div>
+</ngx-doc-viewer>
